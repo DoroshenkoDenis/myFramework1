@@ -13,7 +13,7 @@ public class LanitHomePage extends BasePage {
 
     private final By vacancyBtn = By.xpath("//*[text() = 'Открытые вакансии']");
 
-    public LanitHomePage enterVacancyPage() {
+    public LanitHomePage enterVacanciesPage() {
         WebElement vacancyButton = driver.findElement(vacancyBtn);
         waitElementIsVisible(vacancyButton).click();
         return this;
