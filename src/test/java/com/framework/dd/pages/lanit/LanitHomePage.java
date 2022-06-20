@@ -1,9 +1,9 @@
-package pages.lanit;
+package com.framework.dd.pages.lanit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pages.base.BasePage;
+import com.framework.dd.pages.base.BasePage;
 
 public class LanitHomePage extends BasePage {
 

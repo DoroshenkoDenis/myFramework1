@@ -1,4 +1,4 @@
-package common;
+package com.framework.dd.common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,8 +7,8 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-import static common.Config.PLATFORM_AND_BROWSER;
-import static constants.Constant.TimeoutVariable.IMPLICIT_WAIT;
+import static com.framework.dd.common.Config.PLATFORM_AND_BROWSER;
+import static com.framework.dd.constants.Constant.TimeoutVariable.IMPLICIT_WAIT;
 
 public class CommonActions {
     public static WebDriver createDriver() {
@@ -16,11 +16,11 @@ public class CommonActions {
 
         switch (PLATFORM_AND_BROWSER) {
             case "win_chrome":
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
             case "win_firefox":
-                System.setProperty("webdriver.firefox.driver", "src/main/resources/geckodriver.exe");
+                System.setProperty("webdriver.firefox.driver", "src/test/resources/geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
             default:

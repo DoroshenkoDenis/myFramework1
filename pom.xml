@@ -17,7 +17,7 @@
         <testng.version>7.6.0</testng.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <suiteXml>testng.xml</suiteXml>
+        <suiteXml>testng-all.xml</suiteXml>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     </properties>
 

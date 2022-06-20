@@ -1,4 +1,4 @@
-package common;
+package com.framework.dd.common;
 
 public class Config {
 

@@ -1,4 +1,4 @@
-package constants;
+package com.framework.dd.constants;
 
 public class Constant {
     public static class TimeoutVariable {

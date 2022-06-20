@@ -1,16 +1,16 @@
 package tests.base;
 
-import common.CommonActions;
+import com.framework.dd.common.CommonActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
-import pages.base.BasePage;
-import pages.lanit.LanitHomePage;
-import pages.lanit.LanitVacancyPage;
+import com.framework.dd.pages.base.BasePage;
+import com.framework.dd.pages.lanit.LanitHomePage;
+import com.framework.dd.pages.lanit.LanitVacancyPage;
 
-import static common.Config.CLEAR_COOKIES_AND_STORAGE;
-import static common.Config.HOLD_BROWSER_OPEN;
+import static com.framework.dd.common.Config.CLEAR_COOKIES_AND_STORAGE;
+import static com.framework.dd.common.Config.HOLD_BROWSER_OPEN;
 
 public class BaseTest {
     protected WebDriver driver = CommonActions.createDriver();

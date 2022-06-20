@@ -1,9 +1,9 @@
-package pages.lanit;
+package com.framework.dd.pages.lanit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pages.base.BasePage;
-import data.vacancies.Vacancy;
+import com.framework.dd.pages.base.BasePage;
+import com.framework.dd.data.vacancies.Vacancy;
 
 
 public class LanitVacancyPage extends BasePage {
