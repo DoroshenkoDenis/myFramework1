@@ -1,4 +1,4 @@
-package tests.base;
+package com.framework.dd.tests.base;
 
 import com.framework.dd.common.CommonActions;
 import org.openqa.selenium.JavascriptExecutor;

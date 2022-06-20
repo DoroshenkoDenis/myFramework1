@@ -1,7 +1,7 @@
-package tests.lanit.e2e;
+package com.framework.dd.tests.lanit.e2e;
 
 import org.testng.annotations.Test;
-import tests.base.BaseTest;
+import com.framework.dd.tests.base.BaseTest;
 
 import static com.framework.dd.constants.Constant.Urls.LANIT_HOME_PAGE;
 
