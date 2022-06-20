@@ -1,4 +1,4 @@
-package tests.e2e.lanit;
+package tests.lanit.e2e;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;

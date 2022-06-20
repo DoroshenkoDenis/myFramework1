@@ -3,7 +3,7 @@
 <suite name="ResumeSendingTest">
     <test name="ResumeSendingTest">
         <classes>
-            <class name="tests.e2e.lanit.ResumeSendingTest"/>
+            <class name="tests.lanit.e2e.ResumeSendingTest"/>
         </classes>
     </test>
 </suite>
