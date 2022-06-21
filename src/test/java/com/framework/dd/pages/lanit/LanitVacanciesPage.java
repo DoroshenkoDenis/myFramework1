@@ -3,7 +3,8 @@ package com.framework.dd.pages.lanit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import com.framework.dd.pages.base.BasePage;
-import com.framework.dd.data.vacancies.Vacancy;
+
+import static com.framework.dd.data.vacancies.Vacancy.vacancyName;
 
 
 public class LanitVacanciesPage extends BasePage {
@@ -12,15 +13,15 @@ public class LanitVacanciesPage extends BasePage {
         super(driver);
     }
 
-    private final By vacancy = By.xpath("//*[text()='" + Vacancy.vacancyName + "']");
+    private final By vacancy = By.xpath("//*[text()='" + vacancyName + "']");
 
-    public LanitVacanciesPage getVacancy() {
+    public VacancyPage getVacancy() {
         driver.findElement(vacancy).click();
         // Switch to new window opened
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
-        return this;
+        return new VacancyPage(driver);
     }
 
 }

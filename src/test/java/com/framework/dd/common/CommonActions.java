@@ -11,16 +11,19 @@ import static com.framework.dd.common.Config.PLATFORM_AND_BROWSER;
 import static com.framework.dd.constants.Constant.TimeoutVariable.IMPLICIT_WAIT;
 
 public class CommonActions {
+
+    private static final String RESOURCES_PATH = "src/test/resources/";
+
     public static WebDriver createDriver() {
         WebDriver driver = null;
 
         switch (PLATFORM_AND_BROWSER) {
             case "win_chrome":
-                System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", RESOURCES_PATH + "chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
             case "win_firefox":
-                System.setProperty("webdriver.firefox.driver", "src/test/resources/geckodriver.exe");
+                System.setProperty("webdriver.firefox.driver", RESOURCES_PATH + "geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
             default:
@@ -30,4 +33,5 @@ public class CommonActions {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT));
         return driver;
     }
+
 }

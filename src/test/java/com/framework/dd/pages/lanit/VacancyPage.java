@@ -11,8 +11,8 @@ public class VacancyPage extends BasePage {
 
     private final By requestBtn = By.id("btnResponseInContacts");
 
-    public VacancyPage openRequestForm() {
+    public RequestForm openRequestForm() {
         driver.findElement(requestBtn).click();
-        return this;
+        return new RequestForm(driver);
     }
 }

@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="All Test Suite">
         <packages>
-            <package name="com.framework.dd.tests.lanit.e2e"/>
+            <package name="com.framework.dd.tests.lanit"/>
         </packages>
     </test>
 </suite>
