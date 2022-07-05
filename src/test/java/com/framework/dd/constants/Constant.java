@@ -9,5 +9,7 @@ public class Constant {
 
     public static class Urls {
         public static final String LANIT_HOME_PAGE = "https://job.lanit.ru/Pages/default.aspx";
+        public static final String YA_HOME_PAGE = "https://ya.ru";
+
     }
 }

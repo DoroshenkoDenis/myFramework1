@@ -3,6 +3,7 @@ package com.framework.dd.tests.base;
 import com.framework.dd.common.CommonActions;
 import com.framework.dd.pages.lanit.RequestForm;
 import com.framework.dd.pages.lanit.VacancyPage;
+import com.framework.dd.pages.ya.YaHomePage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
@@ -21,6 +22,7 @@ public class BaseTest {
     protected LanitVacanciesPage lanitVacancyPage = new LanitVacanciesPage(driver);
     protected VacancyPage vacancyPage = new VacancyPage(driver);
     protected RequestForm requestForm = new RequestForm(driver);
+    protected YaHomePage yaHomePage = new YaHomePage(driver);
 
     @AfterTest
     public void clearCookiesAndLocalStorage() {
